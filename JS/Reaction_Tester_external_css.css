@@ -1,0 +1,25 @@
+#background 
+{
+    background-color: white;
+    display: flex;
+    height:100%;
+    width:100%;
+}
+#inner {
+    background-color:red;
+    position: relative;
+    top: 90%;
+    left:0%;
+    height:20%;
+    width:20%;
+    border-radius: 50%;
+    display: none;
+
+}
+#out {
+    font-weight: bold;
+    font-size: 20;
+    position: relative;
+    top: 40%;
+    left: 40%;
+}

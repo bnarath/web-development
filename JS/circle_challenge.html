@@ -1,0 +1,50 @@
+<html>
+    
+    <head>
+        
+        <title>JS Mini challenge</title>
+    
+    
+    
+        <style type="text/css">
+            .circle{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                margin: 200px 100px 200px 100px;
+                float: left;
+            }
+        </style>
+
+    
+        
+    </head>
+    
+    <body>
+        
+
+        <div id="red" style="background-color: red" class='circle'></div>
+        
+        <div id="blue" style="background-color: blue" class='circle'></div>
+            
+        <div id="yellow" style="background-color: yellow" class='circle'></div>
+        
+        <script type="text/javascript">
+            
+            document.getElementById("red").onclick = function() {
+                document.getElementById("red").style.visibility = "hidden";
+            };
+            
+            document.getElementById("blue").onclick = function() {
+                document.getElementById("blue").style.visibility = "hidden";
+            };
+            
+            document.getElementById("yellow").onclick = function() {
+                document.getElementById("yellow").style.visibility = "hidden";
+            };
+        
+        </script>
+    
+    </body>
+
+</html>

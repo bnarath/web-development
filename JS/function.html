@@ -1,0 +1,73 @@
+<html>
+    
+    <head>
+        
+        <title>Javascript</title>
+        
+        <style type="text/css">
+            
+            #div {
+                color: red;
+                font-family: cursive;
+                font-size: 15px;
+            }
+        
+        
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <div id='div'>
+            <p>How many fingers you are holding up ? </p>
+            
+            <label>select from dropdown:</label>
+            <select id = 'DropDown'>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            
+            <p><button id='button'>Submit</button></p>
+            <p id='OUT'></p>
+        </div>
+        
+        <script type="text/javascript">
+            
+            function GuessTheNum(number) {
+                var num = number;
+                var guess = Math.ceil(Math.random()*5);
+                if (num==guess){
+                    return true;
+                }else {
+                    return false;
+                }
+            }
+            document.getElementById('button').onclick = function () {
+                
+                var number = document.getElementById('DropDown').value;
+                
+                
+                var guess = false;
+                var i = 1;
+            
+                while(guess == false){
+                    i++;
+                    guess = GuessTheNum(number);
+                }
+                
+                document.getElementById('OUT').innerHTML = '<p> Computer guessed it in '+i.toString()+' attempts</p>'
+                
+            }
+            
+        
+        </script>
+            
+    
+    
+    </body>
+
+</html>

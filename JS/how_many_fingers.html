@@ -1,0 +1,48 @@
+<html>
+
+    <head>
+        
+        <style type="text/css">
+            
+            p {
+                float: left;
+                margin-right: 10px;
+            }
+            
+            .clear {
+                clear:both;
+            }
+    
+        
+        </style>
+    
+    </head>
+    
+    
+    <body>
+        
+        <p><input id='IN' type=text></p>
+        <p>How many fingers ?</p>
+        
+        <div class=clear></div>
+        <p><button id='submit'>Submit</button></p>
+        
+        <script type="text/javascript">
+        
+            document.getElementById('submit').onclick = function() {
+                var input = document.getElementById('IN').value;
+                
+                var RN = Math.ceil(Math.random()*5);
+                
+                if (input==RN) {
+                    alert("Yes, you guessed correct");
+                } else {
+                    var out = "The correct number is "+RN.toString()
+                    alert(out)
+                }
+            }
+        
+        </script>
+    
+    </body>
+</html>

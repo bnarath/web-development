@@ -1,0 +1,66 @@
+<html>
+    
+    <head>
+        
+        <title>Javascript</title>
+        
+        <style type="text/css">
+            
+            #div {
+                color: red;
+                font-family: cursive;
+                font-size: 15px;
+            }
+        
+        
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <div id='div'>
+            <p>How many fingers you are holding up ? </p>
+            
+            <label>select from dropdown:</label>
+            <select id = 'DropDown'>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            
+            <p><button id='button'>Submit</button></p>
+            <p id='OUT'></p>
+        </div>
+        
+        <script type="text/javascript">
+            document.getElementById('button').onclick = function () {
+                
+                var number = document.getElementById('DropDown').value;
+                
+                
+                if (number > 0 & number <=5) {
+                var no = Math.ceil(Math.random()*5);
+                var i = 1;
+            
+                while(no != number){
+                    i++;
+                    no = Math.ceil(Math.random()*5);
+                }
+                
+                document.getElementById('OUT').innerHTML = '<p> Computer guessed it in '+i.toString()+' attempts</p>'
+                } else {
+                    document.getElementById('OUT').innerHTML = '<p> Enter a number between 1 and  5 inclusive </p>'
+                }
+            }
+            
+        
+        </script>
+            
+    
+    
+    </body>
+
+</html>

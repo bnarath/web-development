@@ -1,0 +1,42 @@
+<html>
+    
+    
+    <head>
+        
+        <title>Javascript</title>
+        
+        <style type="text/css">
+        
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <p>Enter a word</p>
+        <input id="input" type="text">
+        <button id="button">Click</button>
+        <script type="text/javascript">
+            
+            
+            document.getElementById("button").onclick = function() {
+                
+                var Text = document.getElementById("input").value
+                
+                if ( Text.toLowerCase() == 'magic') {
+                    alert("You have won a lottery");
+                } else {
+                    alert("Better luck next time")
+                }
+            
+                
+            }
+            
+        
+        </script>
+    
+    
+    </body>
+
+
+</html>

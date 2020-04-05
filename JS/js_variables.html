@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+    
+    </head>
+    
+    <style>
+   
+    
+    </style>
+    <body>
+        
+        <input id='in' type='text'>
+        <button id='button' class='left'>Change the text</button>
+        
+        <p id='out'>This is some text</p>
+        
+        <script type='text/javascript'>
+           
+            document.getElementById('button').onclick = function() {
+                
+                var textentered = "";
+                textentered = document.getElementById('in').value;
+                
+            document.getElementById('out').innerHTML = textentered;    
+                
+                
+            }
+
+        </script>
+    
+    
+    </body>
+
+</html>
